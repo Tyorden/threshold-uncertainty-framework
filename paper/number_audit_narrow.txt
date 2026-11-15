@@ -1,0 +1,17 @@
+# number_audit_narrow.txt: numbers in draft.tex and supplement.tex checked against results files
+# untraced numbers: 0
+# traced to program-folder results or identifiers: 14
+draft.tex:576: 318 -> A4_persistent_poverty/results/anchor_report.txt (official PerPov1721c count)
+draft.tex:586: 31000 -> rounded from results/small_checks.json qct_hud_rounding_check (31,142 to 32,003)
+draft.tex:586: 32000 -> rounded from results/small_checks.json qct_hud_rounding_check (31,142 to 32,003)
+draft.tex:873: 318 -> A4_persistent_poverty/results/anchor_report.txt (official PerPov1721c count)
+draft.tex:1147: 256 -> SHA-256 (name of a hash function, not a result)
+supplement.tex:202: 84783 -> A1_ffiec_cra/results/correctness_anchor_match.csv (exact anchor)
+supplement.tex:202: 84783 -> A1_ffiec_cra/results/correctness_anchor_match.csv (exact anchor)
+supplement.tex:205: 3234 -> A3_hubzone_laus/results/anchor_level1.txt
+supplement.tex:205: 3234 -> A3_hubzone_laus/results/anchor_level1.txt
+supplement.tex:357: 84783 -> A1_ffiec_cra/results/correctness_anchor_match.csv (exact anchor)
+supplement.tex:358: 84713 -> A1_ffiec_cra/results/correctness_anchor_match.csv ($100-rounding row)
+supplement.tex:373: 84783 -> A1_ffiec_cra/results/correctness_anchor_match.csv (exact anchor)
+supplement.tex:382: 3234 -> A3_hubzone_laus/results/anchor_level1.txt
+supplement.tex:386: 473 -> A3_hubzone_laus/results/anchor_summary.md

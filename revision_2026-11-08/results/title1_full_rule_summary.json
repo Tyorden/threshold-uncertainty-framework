@@ -1,0 +1,172 @@
+{
+  "universe": "SAIPE 2023 school districts with a formula-child count and positive 5-17 population",
+  "n_districts": 13137,
+  "n_records_in_file": 13143,
+  "rule": "eligible iff FC > max(10, 0.02N, min(6500, 0.15N)); N fixed",
+  "se_model": {
+    "A": 0.3790540540620769,
+    "B": 0.8915573306555555
+  },
+  "point_estimate_eligible": 5421,
+  "by_se_scale": {
+    "0.5": {
+      "indeterminate_0p10_0p90": 2475,
+      "indeterminate_share": 0.18839917789449645,
+      "knife_edge_0p40_0p60": 524,
+      "indeterminate_by_binding_threshold": {
+        "basic_count_10": 60,
+        "basic_rate_2pct": 0,
+        "conc_count_6500": 12,
+        "conc_rate_15pct": 2403
+      },
+      "knife_by_binding_threshold": {
+        "basic_count_10": 15,
+        "basic_rate_2pct": 0,
+        "conc_count_6500": 1,
+        "conc_rate_15pct": 508
+      },
+      "expected_misclassified_flat_prior": 772.2755800552836,
+      "phi_ge_0p10": 2475,
+      "phi_ge_0p25": 1345,
+      "designated_with_phi_ge_0p10": 1310,
+      "share_designated_with_phi_ge_0p10": 0.24165283158088913,
+      "expected_changes_share_of_list": 0.14245998525277323,
+      "expected_losses": 406.592721214717,
+      "expected_gains": 365.6828588405666,
+      "pop_5_17_in_indeterminate": 6466078.0,
+      "total_pop_in_indeterminate": 43812513.0
+    },
+    "1.0": {
+      "indeterminate_0p10_0p90": 4678,
+      "indeterminate_share": 0.35609347644058764,
+      "knife_edge_0p40_0p60": 1017,
+      "indeterminate_by_binding_threshold": {
+        "basic_count_10": 112,
+        "basic_rate_2pct": 0,
+        "conc_count_6500": 23,
+        "conc_rate_15pct": 4543
+      },
+      "knife_by_binding_threshold": {
+        "basic_count_10": 15,
+        "basic_rate_2pct": 0,
+        "conc_count_6500": 2,
+        "conc_rate_15pct": 1000
+      },
+      "expected_misclassified_flat_prior": 1465.458143210345,
+      "phi_ge_0p10": 4678,
+      "phi_ge_0p25": 2586,
+      "designated_with_phi_ge_0p10": 2607,
+      "share_designated_with_phi_ge_0p10": 0.4809075816270061,
+      "expected_changes_share_of_list": 0.2703298548626351,
+      "expected_losses": 803.8944466623008,
+      "expected_gains": 661.5636965480445,
+      "pop_5_17_in_indeterminate": 12753814.0,
+      "total_pop_in_indeterminate": 86144358.0
+    },
+    "1.5": {
+      "indeterminate_0p10_0p90": 6745,
+      "indeterminate_share": 0.5134353353124762,
+      "knife_edge_0p40_0p60": 1500,
+      "indeterminate_by_binding_threshold": {
+        "basic_count_10": 180,
+        "basic_rate_2pct": 0,
+        "conc_count_6500": 37,
+        "conc_rate_15pct": 6528
+      },
+      "knife_by_binding_threshold": {
+        "basic_count_10": 48,
+        "basic_rate_2pct": 0,
+        "conc_count_6500": 4,
+        "conc_rate_15pct": 1448
+      },
+      "expected_misclassified_flat_prior": 2060.021366508366,
+      "phi_ge_0p10": 6745,
+      "phi_ge_0p25": 3758,
+      "designated_with_phi_ge_0p10": 3853,
+      "share_designated_with_phi_ge_0p10": 0.7107544733444014,
+      "expected_changes_share_of_list": 0.38000763078922084,
+      "expected_losses": 1142.9373666027814,
+      "expected_gains": 917.0839999055851,
+      "pop_5_17_in_indeterminate": 18794921.0,
+      "total_pop_in_indeterminate": 126694575.0
+    }
+  },
+  "old_count_cliff_74": {
+    "n": 74,
+    "point_rate_above_15pct": 52,
+    "full_rule_indeterminate": 39,
+    "full_rule_indeterminate_count_cliff_binding": 23
+  },
+  "old_rate_cliff_coinflips": 4843,
+  "old_rate_cliff_knife": 1058,
+  "exhibits": [
+    {
+      "leaid": "4202280",
+      "name": "Allentown City School District",
+      "total_pop": 124111,
+      "pop_5_17": 21736,
+      "formula_children": 6492,
+      "rate": 0.298675009201325,
+      "T": 3260.4,
+      "binding_threshold": "conc_rate_15pct",
+      "se_fc_k1": 949.8502792107777,
+      "p_elig_k1.0": 0.9996657964538929,
+      "p_elig_k0.5": 0.9999999999949278,
+      "p_elig_k1.5": 0.9883398737672054,
+      "p_rate_prong_15pct_k1": 0.9996657964538929,
+      "p_count_prong_6500_k1": 0.4966399962386557
+    },
+    {
+      "leaid": "5307710",
+      "name": "Seattle Public Schools",
+      "total_pop": 738323,
+      "pop_5_17": 69739,
+      "formula_children": 6552,
+      "rate": 0.0939503004057987,
+      "T": 6500.0,
+      "binding_threshold": "conc_count_6500",
+      "se_fc_k1": 957.6730430642485,
+      "p_elig_k1.0": 0.5216512404516064,
+      "p_elig_k0.5": 0.5432387561242211,
+      "p_elig_k1.5": 0.5144381001166087,
+      "p_rate_prong_15pct_k1": 2.236218642738731e-05,
+      "p_count_prong_6500_k1": 0.5216512404516064
+    }
+  ],
+  "mc_crosscheck_k1": {
+    "draws": 20000,
+    "seed": 20261108,
+    "max_abs_diff_closed_form": 0.015219287566989759,
+    "max_mcse": 0.003535533835222059,
+    "indeterminate_mc": 4675,
+    "indeterminate_closed_form": 4678
+  },
+  "denominator_error_sensitivity_k1": {
+    "0.01": {
+      "indeterminate_0p10_0p90": 4679,
+      "knife_edge_0p40_0p60": 1019,
+      "draws": 20000,
+      "seed": 20261118
+    },
+    "0.03": {
+      "indeterminate_0p10_0p90": 4723,
+      "knife_edge_0p40_0p60": 1016,
+      "draws": 20000,
+      "seed": 20261138
+    },
+    "0.05": {
+      "indeterminate_0p10_0p90": 4792,
+      "knife_edge_0p40_0p60": 1046,
+      "draws": 20000,
+      "seed": 20261158
+    }
+  },
+  "denominator_error_note": "CV of N is ASSUMED (1%, 3%, 5%), independent of FC error; SAIPE publishes no error for the 5-17 population.",
+  "se_fit_diagnostics": {
+    "n_counties": 3142,
+    "share_counties_above_curve": 0.5553787396562699,
+    "residual_sd_log": 0.1491609828051666,
+    "median_abs_rel_error": 0.08389812494958361,
+    "note": "OLS of log SE on log count; a central curve, roughly half the counties lie above it."
+  }
+}

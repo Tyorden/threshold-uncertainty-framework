@@ -1,0 +1,22 @@
+{
+  "R": 2000,
+  "seed": 20261108,
+  "runs": [
+    "indep",
+    "xvintage_only",
+    "realistic",
+    "xvintage_high",
+    "realistic_ip_lo",
+    "realistic_ip_hi",
+    "realistic_lognormal_inc",
+    "realistic_se075",
+    "realistic_se125",
+    "latest_only",
+    "avg3",
+    "elig_real_rank_indep",
+    "elig_indep_rank_real"
+  ],
+  "n_tracts": 85390,
+  "seconds": 236.9,
+  "seeding": "np.random.default_rng([SEED, r]) per draw r, 9 x n standard normals, shared by all runs"
+}

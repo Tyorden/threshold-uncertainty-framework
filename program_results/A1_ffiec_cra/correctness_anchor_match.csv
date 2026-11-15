@@ -1,0 +1,4 @@
+method,matches,total,match_rate
+classify(raw B19113 ratio),84783,84783,100.0000%
+classify(published field13),84783,84783,100.0000%
+classify($100-rounded MFIs),84713,84783,99.9174%

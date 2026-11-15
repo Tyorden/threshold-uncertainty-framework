@@ -1,0 +1,29 @@
+results/key_numbers.json: differing leaves 1; numeric with rel diff > 1e-9: 0; max rel 1.78e-16; non-numeric 0
+results/mua_anchor_designation.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/pp_conjunctive.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/qct_canonical/run_meta.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/qct_canonical_summary.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/qct_decomposition/decomposition_summary.json: differing leaves 1; numeric with rel diff > 1e-9: 0; max rel 1.78e-16; non-numeric 0
+results/qct_eb/eb_summary.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/qct_known_truth/known_truth_summary.json: differing leaves 10; numeric with rel diff > 1e-9: 6; max rel 1.15e-07; non-numeric 0
+     ('/T2/national/sum_phi_eb/sd', 9.192258757671744e-08, (20.749507904052734, 20.749509811401367))
+     ('/T2/cap_bound/eb_losses/mean', 8.484493061720954e-08, (359.6864929199219, 359.6865234375))
+     ('/T2/cap_bound/sum_two_survey_disagreement/sd', 1.1104178402395215e-07, (2.147106647491455, 2.147106885910034))
+     ('/T1/national/sum_two_survey_disagreement/mean', 1.1479660509703815e-07, (2126.72314453125, 2126.723388671875))
+     ('/T1/national/sum_two_survey_disagreement/sd', 6.285258730161524e-08, (15.17319107055664, 15.173190116882324))
+     ('/T1/cap_bound/eb_losses/mean', 8.741886873340026e-08, (349.0959777832031, 349.09600830078125))
+results/qct_ranking_conventions.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/qct_validation.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/small_checks.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/title1_full_rule_summary.json: differing leaves 0; numeric with rel diff > 1e-9: 0; max rel 0.00e+00; non-numeric 0
+results/pp_live_rule_per_county.csv byte-identical
+results/qct_canonical/bits_des_realistic.npy byte-identical
+results/qct_canonical/bits_elig_realistic.npy byte-identical
+results/qct_canonical/per_tract_counts.parquet byte-identical
+results/qct_canonical/per_tract_realistic.parquet byte-identical
+results/qct_canonical_table.csv byte-identical
+results/qct_decomposition/decomposition_targets.csv DIFFERENT bytes
+results/qct_eb/per_tract_flat_vs_eb.parquet byte-identical
+results/qct_residual_by_unit.csv byte-identical
+results/title1_exhibits.csv byte-identical
+results/title1_full_rule_districts.csv byte-identical

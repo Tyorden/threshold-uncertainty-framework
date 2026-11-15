@@ -1,0 +1,92 @@
+{
+  "V0_current": {
+    "match": 85169,
+    "residual": 221,
+    "replication_only": 104,
+    "hud_only": 117
+  },
+  "V1_avg_all3_with_zeros": {
+    "match": 84404,
+    "residual": 986,
+    "replication_only": 485,
+    "hud_only": 501
+  },
+  "V2_rank_average": {
+    "match": 85170,
+    "residual": 220,
+    "replication_only": 104,
+    "hud_only": 116
+  },
+  "V3_rank_max": {
+    "match": 85170,
+    "residual": 220,
+    "replication_only": 104,
+    "hud_only": 116
+  },
+  "V3b_rank_dense": {
+    "match": 85107,
+    "residual": 283,
+    "replication_only": 134,
+    "hud_only": 149
+  },
+  "V3c_rank_ordinal": {
+    "match": 85168,
+    "residual": 222,
+    "replication_only": 105,
+    "hud_only": 117
+  },
+  "V4_rank_across_groups": {
+    "match": 85156,
+    "residual": 234,
+    "replication_only": 111,
+    "hud_only": 123
+  },
+  "V5_raw_unrounded_avgs": {
+    "match": 85167,
+    "residual": 223,
+    "replication_only": 105,
+    "hud_only": 118
+  },
+  "V6_rounded_avgs": {
+    "match": 85169,
+    "residual": 221,
+    "replication_only": 104,
+    "hud_only": 117
+  },
+  "V6b_float32_avgs": {
+    "match": 85169,
+    "residual": 221,
+    "replication_only": 104,
+    "hud_only": 117
+  },
+  "V7_tie_less_populous_first": {
+    "match": 85170,
+    "residual": 220,
+    "replication_only": 119,
+    "hud_only": 101
+  },
+  "V8_strict_lt_cap": {
+    "match": 85169,
+    "residual": 221,
+    "replication_only": 104,
+    "hud_only": 117
+  },
+  "V9_nan_rank_as_worst": {
+    "match": 85008,
+    "residual": 382,
+    "replication_only": 202,
+    "hud_only": 180
+  },
+  "V10_household_pop_cap": {
+    "match": 85073,
+    "residual": 317,
+    "replication_only": 246,
+    "hud_only": 71
+  },
+  "units_with_residual": 41,
+  "units_where_hud_list_exceeds_20pct": 0,
+  "hud_share_range_in_residual_units": [
+    0.16975535935388325,
+    0.19999994024480508
+  ]
+}

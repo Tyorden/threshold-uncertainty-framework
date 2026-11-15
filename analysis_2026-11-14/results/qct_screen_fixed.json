@@ -1,0 +1,41 @@
+{
+ "R": 2000,
+ "seed": 20261108,
+ "n_tracts": 85390,
+ "model": "realistic error model; only the reliability screen differs between runs",
+ "published_screen_true_share": {
+  "med": 0.9316977007455987,
+  "univ": 0.9834367802631065,
+  "inpov": 0.3713666705703244
+ },
+ "runs": {
+  "canonical": {
+   "expected_losses": 2757.4534999999996,
+   "losses_rank_driven": 714.8775,
+   "expected_gains": 3466.8374999999996,
+   "expected_two_sided": 6224.291,
+   "designated_phi_ge_0p10": 7982,
+   "designated": 14496
+  },
+  "pov_screen_fixed": {
+   "expected_losses": 2355.3599999999997,
+   "losses_rank_driven": 408.804,
+   "expected_gains": 2556.5874999999996,
+   "expected_two_sided": 4911.9475,
+   "designated_phi_ge_0p10": 6769,
+   "designated": 14496,
+   "two_sided_change_vs_canonical_pct": -21.1
+  },
+  "all_screens_fixed": {
+   "expected_losses": 2142.8785,
+   "losses_rank_driven": 451.742,
+   "expected_gains": 2921.636,
+   "expected_two_sided": 5064.514499999999,
+   "designated_phi_ge_0p10": 6450,
+   "designated": 14496,
+   "two_sided_change_vs_canonical_pct": -18.6
+  }
+ },
+ "canonical_reproduces_canonical_pass": true,
+ "seconds": 85.2
+}

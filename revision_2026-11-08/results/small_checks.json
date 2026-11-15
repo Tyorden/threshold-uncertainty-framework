@@ -1,0 +1,212 @@
+{
+  "cra": {
+    "n_tracts": 2264,
+    "draws": 20000,
+    "mean_flip_four_class": 0.24724971289752648,
+    "mean_flip_lmi_line": 0.111813074204947,
+    "expected_lmi_flips": 253.1448,
+    "mean_flip_lmi_line_lmi_tracts": 0.14284557453416147,
+    "mean_flip_lmi_line_non_lmi_tracts": 0.09947669753086419,
+    "n_lmi_tracts": 644,
+    "lmi_flip_ge_0p10": 831,
+    "max_mc_se_per_tract": 0.0035355339059327377,
+    "universe_note": "the bridge check ran on all 2,287 merged pilot tracts; the flip pilot keeps the 2,264 with a usable MOE, a positive area MFI and a tract MFI (A1_ffiec_cra/scripts/03_flip_pilot.py lines 52-54)"
+  },
+  "hubzone_columns_seen": [
+    "County Code",
+    "County Name",
+    "State",
+    "2021 Median Household Income Ratio",
+    "2021 State Unemployment Ratio",
+    "2021 US Unemployment Ratio",
+    "2022 OMB Delineation",
+    "Qualified by Income?",
+    "Qualified by Unemplyoment?",
+    "Qualified by DDA?",
+    "2021 Status (Previous)",
+    "Status as of July 1, 2023 ",
+    "Change?"
+  ],
+  "hubzone_ratio_columns": {
+    "state": [
+      "2021 State Unemployment Ratio"
+    ],
+    "us": [
+      "2021 US Unemployment Ratio"
+    ],
+    "metro": []
+  },
+  "hubzone_band_file_rows": 474,
+  "hubzone_nonmetro_counties": 1983,
+  "hubzone_counties_with_ratio": 1969,
+  "hubzone_model_r": {
+    "sigma": 0.1215,
+    "counties_with_ratio": 1969,
+    "phi_ge_0p10": 352,
+    "phi_ge_0p25": 180,
+    "phi_ge_0p10_outside_band": 0,
+    "max_phi_outside_band": 0.04918762354292534,
+    "expected_misclassified_all": 111.13262597465666,
+    "expected_misclassified_outside_band": 6.95566055181359,
+    "band_counties": 474,
+    "share_phi_ge_0p10_of_nonmetro": 0.17750882501260717,
+    "note": "universe: nonmetropolitan counties (2022 OMB delineation) in SBA's July 2023 file"
+  },
+  "title1_small_lea": {
+    "indeterminate": 4678,
+    "indeterminate_total_pop_lt_20000": 3741,
+    "all_districts_total_pop_lt_20000": 9647
+  },
+  "qct_year_over_year": {
+    "tracts_2026": 85390,
+    "tracts_2025": 85390,
+    "matched": 85390,
+    "unmatched": 0,
+    "designated_2025": 15727,
+    "designated_2026": 14496,
+    "in_both": 13263,
+    "dropped_2025_to_2026": 2464,
+    "added_2025_to_2026": 1233,
+    "turnover_share_of_2026_list": 0.2550358719646799
+  },
+  "qct_year_over_year_by_rule": {
+    "hud_2of3": {
+      "designated_2025": 15728,
+      "designated_2026": 14483,
+      "dropped": 2543,
+      "added": 1298,
+      "turnover_share_of_2026_list": 0.2652074846371608
+    },
+    "latest_only": {
+      "designated_2025": 15316,
+      "designated_2026": 14080,
+      "dropped": 3727,
+      "added": 2491,
+      "turnover_share_of_2026_list": 0.44161931818181815
+    },
+    "replication_2025_match_hud": 84887,
+    "n_2025": 85390,
+    "note": "2025 file vintages 2016-20, 2017-21, 2018-22; 2026 file 2017-21, 2018-22, 2019-23; turnover mixes true change, income-limit updates and sampling error"
+  },
+  "mua_controlled_p65": {
+    "pilot_areas": 667,
+    "controlled_p65_moe_code": 14,
+    "score_qualified": 631,
+    "controlled_among_score_qualified": 13
+  },
+  "common_metrics_inputs": {
+    "title1": {
+      "listed": 5421,
+      "listed_phi_ge_0p10": 2607,
+      "pop517_listed_phi_ge_0p10": 7264688.0,
+      "total_pop_listed_phi_ge_0p10": 47772067.0,
+      "expected_changes": 1465.4581432103448
+    },
+    "cra_lmi_line": {
+      "listed_lmi": 644,
+      "listed_phi_ge_0p10": 292,
+      "expected_changes": 253.1448
+    },
+    "hubzone_unemployment": {
+      "nonmetro": 1983,
+      "listed": 269,
+      "listed_phi_ge_0p10": 126,
+      "expected_changes": 111.13262597465666
+    },
+    "mua": {
+      "listed": 631,
+      "listed_phi_ge_0p10": 101,
+      "expected_changes": 31.4655,
+      "designation_population_fragile": 1627186,
+      "designation_population_listed": 12040710
+    }
+  },
+  "qct_hud_rounding_check": {
+    "21": {
+      "reliable_tracts": 32003,
+      "mismatch_half_up": 0,
+      "mismatch_half_even": 12,
+      "mismatch_floor": 16015,
+      "mismatch_ceil": 15891,
+      "unreliable_with_stored_zero": 53387,
+      "unreliable_total": 53387
+    },
+    "22": {
+      "reliable_tracts": 31946,
+      "mismatch_half_up": 0,
+      "mismatch_half_even": 10,
+      "mismatch_floor": 15886,
+      "mismatch_ceil": 15963,
+      "unreliable_with_stored_zero": 53444,
+      "unreliable_total": 53444
+    },
+    "23": {
+      "reliable_tracts": 31142,
+      "mismatch_half_up": 0,
+      "mismatch_half_even": 10,
+      "mismatch_floor": 15491,
+      "mismatch_ceil": 15573,
+      "unreliable_with_stored_zero": 54248,
+      "unreliable_total": 54248
+    }
+  },
+  "mua_score_qualified_le_60": 493,
+  "estimand_closed_forms": {
+    "on_line_E_phi_hat": 0.25006818819451915,
+    "on_line_P_phi_hat_lt_0p10": 0.1998555,
+    "on_line_true_wrong_side_prob": 0.5,
+    "two_se_E_phi_hat": 0.07240693347324215,
+    "two_se_P_phi_hat_ge_0p10": 0.2353405,
+    "two_se_E_phi_hat_quadrature": 0.07246384339048044,
+    "two_se_published_wrong_prob": 0.022750131948179198,
+    "two_se_two_survey_disagreement": 0.044465126889039266,
+    "spread_truths": [
+      {
+        "tau": 0.25,
+        "mean_phi_hat": 0.24528655835900415,
+        "closed_mean_phi_hat": 0.2451763845112836,
+        "misclassification_rate": 0.422661,
+        "two_survey_disagreement": 0.4812373320568624,
+        "closed_disagreement": 0.4812650739809228,
+        "ratio_disagreement_to_mean_phi_hat": 1.9619392732989391
+      },
+      {
+        "tau": 0.5,
+        "mean_phi_hat": 0.23227843675436738,
+        "closed_mean_phi_hat": 0.23227952719876999,
+        "misclassification_rate": 0.352822,
+        "two_survey_disagreement": 0.43585144612523974,
+        "closed_disagreement": 0.435905783151025,
+        "ratio_disagreement_to_mean_phi_hat": 1.8764180274992517
+      },
+      {
+        "tau": 1.0,
+        "mean_phi_hat": 0.19589279159336748,
+        "closed_mean_phi_hat": 0.19591327601530362,
+        "misclassification_rate": 0.250117,
+        "two_survey_disagreement": 0.33335824364245964,
+        "closed_disagreement": 0.3333333333333333,
+        "ratio_disagreement_to_mean_phi_hat": 1.7017381851111792
+      },
+      {
+        "tau": 2.0,
+        "mean_phi_hat": 0.13380156946225014,
+        "closed_mean_phi_hat": 0.133860236400615,
+        "misclassification_rate": 0.147953,
+        "two_survey_disagreement": 0.2047855928429809,
+        "closed_disagreement": 0.20483276469913342,
+        "ratio_disagreement_to_mean_phi_hat": 1.5305171207334582
+      },
+      {
+        "tau": 4.0,
+        "mean_phi_hat": 0.07574841341628932,
+        "closed_mean_phi_hat": 0.07573901236314673,
+        "misclassification_rate": 0.077886,
+        "two_survey_disagreement": 0.10964354030884421,
+        "closed_disagreement": 0.10972179330912539,
+        "ratio_disagreement_to_mean_phi_hat": 1.4474697932784149
+      }
+    ],
+    "note": "mean phi_hat equals the misclassification rate (posterior calibration in aggregate under a locally flat density); the two-survey disagreement is larger by a factor between sqrt(2) and 2"
+  }
+}

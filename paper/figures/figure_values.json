@@ -1,0 +1,76 @@
+{
+ "fig1_qct_share_listed_phi_ge_0p10": 55.1,
+ "fig1_qct_share_listed_phi_ge_0p25": 34.5,
+ "fig1_qct_listed_phi_ge_0p25": 5000,
+ "fig1_qct_capbound_listed": 4566,
+ "fig1_qct_slack_listed": 9930,
+ "fig1_qct_capbound_share_phi_ge_0p10": 64.4,
+ "fig1_qct_slack_share_phi_ge_0p10": 50.8,
+ "fig1_qct_capbound_share_phi_ge_0p25": 41.4,
+ "fig1_qct_slack_share_phi_ge_0p25": 31.3,
+ "fig1_pp_listed": 316,
+ "fig1_pp_flat_listed_phi_ge_0p1": 145,
+ "fig1_pp_flat_listed_phi_ge_0p25": 87,
+ "fig1_pp_eb_listed_phi_ge_0p1": 81,
+ "fig1_pp_eb_listed_phi_ge_0p25": 39,
+ "fig2_qct_hud_2of3_false_pct_of_list": 19.0,
+ "fig2_qct_hud_2of3_missed_pct_of_list": 23.9,
+ "fig2_qct_latest_only_false_pct_of_list": 21.7,
+ "fig2_qct_latest_only_missed_pct_of_list": 28.7,
+ "fig2_qct_avg3_false_pct_of_list": 18.7,
+ "fig2_qct_avg3_missed_pct_of_list": 24.6,
+ "fig2_qct_hud_2of3_nonoverlap_false_pct_of_list": 15.9,
+ "fig2_qct_hud_2of3_nonoverlap_missed_pct_of_list": 18.7,
+ "fig2_pp_conjunction_false_flat_prior": 49.8,
+ "fig2_pp_single_2017_21_false_flat_prior": 67.5,
+ "fig2_pp_four_period_mean_false_flat_prior": 34.3,
+ "fig2_pp_conjunction_false_empirical_bayes": 24.9,
+ "fig2_pp_single_2017_21_false_empirical_bayes": 93.4,
+ "fig2_pp_four_period_mean_false_empirical_bayes": 41.2,
+ "fig2_pp_conjunction_missed_flat_prior": 26.4,
+ "fig2_pp_single_2017_21_missed_flat_prior": 79.5,
+ "fig2_pp_four_period_mean_missed_flat_prior": 35.1,
+ "fig2_pp_conjunction_missed_empirical_bayes": 56.2,
+ "fig2_pp_single_2017_21_missed_empirical_bayes": 59.3,
+ "fig2_pp_four_period_mean_missed_empirical_bayes": 29.0,
+ "fig3_qct_truth_design_t1_top_bin_flat": [
+  0.58,
+  0.58
+ ],
+ "fig3_qct_truth_design_t1_top_bin_eb": [
+  0.64,
+  0.58
+ ],
+ "fig3_qct_truth_design_t2_top_bin_flat": [
+  0.58,
+  0.59
+ ],
+ "fig3_qct_truth_design_t2_top_bin_eb": [
+  0.66,
+  0.53
+ ],
+ "fig3_persistent_poverty_t1_top_bin_flat": [
+  0.61,
+  0.41
+ ],
+ "fig3_persistent_poverty_t1_top_bin_eb": [
+  0.68,
+  0.68
+ ],
+ "fig3_persistent_poverty_t2_top_bin_flat": [
+  0.6,
+  0.48
+ ],
+ "fig3_persistent_poverty_t2_top_bin_eb": [
+  0.71,
+  0.55
+ ],
+ "fig3_qct_upper_bins_min_n": 6535,
+ "fig3_qct_upper_bins_max_n": 46105,
+ "fig3_qct_lowest_bin_share_min_pct": 91.2,
+ "fig3_qct_lowest_bin_share_max_pct": 92.1,
+ "fig3_pp_upper_bins_min_n": 908,
+ "fig3_pp_upper_bins_max_n": 4290,
+ "fig3_pp_lowest_bin_share_min_pct": 88.1,
+ "fig3_pp_lowest_bin_share_max_pct": 88.9
+}

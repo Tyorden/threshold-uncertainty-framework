@@ -1,0 +1,764 @@
+{
+  "census1990_parse": {
+    "rows": 3141,
+    "fips_repairs": [
+      {
+        "state": "CA",
+        "county": "Stanislaus County",
+        "fips_in_file": "06009",
+        "fips_from_ers_name": "06099"
+      },
+      {
+        "state": "IA",
+        "county": "Greene County",
+        "fips_in_file": "17073",
+        "fips_from_ers_name": "19073"
+      },
+      {
+        "state": "NE",
+        "county": "Butler County",
+        "fips_in_file": "21023",
+        "fips_from_ers_name": "31023"
+      },
+      {
+        "state": "WI",
+        "county": "Kenosha County",
+        "fips_in_file": "55069",
+        "fips_from_ers_name": "55059"
+      }
+    ],
+    "rate_count_inconsistent_rows": [
+      {
+        "state": "TX",
+        "county": "Marion County",
+        "fips": "48315",
+        "total": 9893.0,
+        "npov": 3024.0,
+        "rate": 60.6,
+        "crank": 178.0
+      },
+      {
+        "state": "IL",
+        "county": "Jefferson County",
+        "fips": "17081",
+        "total": 26495.0,
+        "npov": 5860.0,
+        "rate": 16.1,
+        "crank": 1394.5
+      },
+      {
+        "state": "OK",
+        "county": "McClain County",
+        "fips": "40087",
+        "total": 26608.0,
+        "npov": 3213.0,
+        "rate": 14.2,
+        "crank": 1758.0
+      },
+      {
+        "state": "MI",
+        "county": "Branch County",
+        "fips": "26023",
+        "total": 39759.0,
+        "npov": 560.0,
+        "rate": 14.1,
+        "crank": 1784.5
+      },
+      {
+        "state": "KS",
+        "county": "Ellsworth County",
+        "fips": "20053",
+        "total": 5926.0,
+        "npov": 735.0,
+        "rate": 12.2,
+        "crank": 2145.0
+      },
+      {
+        "state": "OH",
+        "county": "Lorain County",
+        "fips": "39093",
+        "total": 265062.0,
+        "npov": 34059.0,
+        "rate": 11.5,
+        "crank": 2291.5
+      },
+      {
+        "state": "OH",
+        "county": "Lake County",
+        "fips": "39085",
+        "total": 213036.0,
+        "npov": 14033.0,
+        "rate": 4.9,
+        "crank": 3078.0
+      }
+    ],
+    "rule": "unrounded count ratio where it agrees with the one-decimal rate column (within 0.05); otherwise the rate column (it matches the published ranks), except Marion County TX, where the rate field (60.6) is the typo and the count ratio (30.6) matches its rank",
+    "duplicated_after_repair": 0
+  },
+  "census2000_parse": {
+    "rows": 3219,
+    "duplicated": 0,
+    "max_abs_rate_vs_counts": 0.04999999999999982
+  },
+  "flag_rebuild": {
+    "1990_unrounded_ge20": {
+      "n": 3122,
+      "agree": 3122,
+      "mismatches": 0,
+      "mismatch_fips": []
+    },
+    "1990_rate_field_one_decimal_ge20": {
+      "n": 3122,
+      "agree": 3118,
+      "mismatches": 4,
+      "mismatch_fips": [
+        "12107",
+        "20199",
+        "31107",
+        "48281"
+      ]
+    },
+    "2000_rate_one_decimal_ge20": {
+      "n": 3125,
+      "agree": 3119,
+      "mismatches": 6,
+      "mismatch_fips": [
+        "12013",
+        "36061",
+        "51029",
+        "51111",
+        "51195",
+        "51590"
+      ]
+    },
+    "2000_raw_ratio_ge20": {
+      "n": 3125,
+      "agree": 3125,
+      "mismatches": 0,
+      "mismatch_fips": []
+    },
+    "2011_raw_ge20": {
+      "n": 3125,
+      "agree": 3125,
+      "mismatches": 0,
+      "mismatch_fips": []
+    },
+    "2011_round1_ge20": {
+      "n": 3125,
+      "agree": 3121,
+      "mismatches": 4,
+      "mismatch_fips": [
+        "35051",
+        "40013",
+        "48399",
+        "53025"
+      ]
+    },
+    "2021_raw_ge20": {
+      "n": 3126,
+      "agree": 3126,
+      "mismatches": 0,
+      "mismatch_fips": []
+    },
+    "2021_round1_ge20": {
+      "n": 3126,
+      "agree": 3123,
+      "mismatches": 3,
+      "mismatch_fips": [
+        "04009",
+        "28085",
+        "40009"
+      ]
+    }
+  },
+  "live_universe": {
+    "n_counties": 3109,
+    "point_designated_rebuilt": 316,
+    "official_designated_in_universe": 316,
+    "rebuilt_vs_official_agree": 3109
+  },
+  "live_rule": {
+    "DF1.0_rho0": {
+      "label": "DF=1.0, rho=0 (closed form)",
+      "designated": 316,
+      "expected_losses": 46.16647043583829,
+      "expected_gains": 24.607364209416858,
+      "expected_two_sided": 70.77383464525515,
+      "loss_rate_designated": 0.146096425429868,
+      "single_designated": 501,
+      "single_expected_losses": 67.50228738676529,
+      "single_expected_gains": 79.51229090680967,
+      "single_two_sided": 147.01457829357497,
+      "single_loss_rate": 0.13473510456440177,
+      "ratio_two_sided": 0.4814069153327511,
+      "ratio_loss_rate": 1.0843233907168985,
+      "ratio_losses": 0.6839245338653492,
+      "ratio_gains": 0.30947874760969074,
+      "designated_phi_ge_0p10": 138,
+      "share_designated_phi_ge_0p10": 0.43670886075949367,
+      "phi_ge_0p10_all": 225,
+      "expected_changes_share_of_list": 0.22396783115587074,
+      "pop_in_fragile_designated": 4949725.0,
+      "mean_phi_designated": 0.146096425429868,
+      "average_rule": {
+        "designated": 601,
+        "expected_losses": 32.39012078314818,
+        "expected_gains": 32.12023355779587,
+        "expected_two_sided": 64.51035434094405,
+        "loss_rate": 0.05389371178560429,
+        "overlap_with_conjunction": 316
+      }
+    },
+    "DF1.5_rho0": {
+      "label": "DF=1.5, rho=0 (closed form)",
+      "designated": 316,
+      "expected_losses": 49.75086228950268,
+      "expected_gains": 26.35984156554038,
+      "expected_two_sided": 76.11070385504306,
+      "loss_rate_designated": 0.15743943762500848,
+      "single_designated": 501,
+      "single_expected_losses": 67.50228738676529,
+      "single_expected_gains": 79.51229090680967,
+      "single_two_sided": 147.01457829357497,
+      "single_loss_rate": 0.13473510456440177,
+      "ratio_two_sided": 0.5177085479445228,
+      "ratio_loss_rate": 1.1685108950188576,
+      "ratio_losses": 0.737024835979958,
+      "ratio_gains": 0.3315190804454968,
+      "designated_phi_ge_0p10": 145,
+      "share_designated_phi_ge_0p10": 0.4588607594936709,
+      "phi_ge_0p10_all": 236,
+      "expected_changes_share_of_list": 0.2408566577691236,
+      "pop_in_fragile_designated": 5148917.0,
+      "mean_phi_designated": 0.15743943762500848,
+      "average_rule": {
+        "designated": 601,
+        "expected_losses": 34.34399713524029,
+        "expected_gains": 35.13405113346444,
+        "expected_two_sided": 69.47804826870474,
+        "loss_rate": 0.05714475396878584,
+        "overlap_with_conjunction": 316
+      }
+    },
+    "DF1.5_rho0.3": {
+      "label": "DF=1.5, rho=0.3 (assumed)",
+      "designated": 316,
+      "expected_losses": 47.35429349320638,
+      "expected_gains": 32.409631148878034,
+      "expected_two_sided": 79.76392464208442,
+      "loss_rate_designated": 0.14985535915571638,
+      "single_designated": 501,
+      "single_expected_losses": 67.50228738676529,
+      "single_expected_gains": 79.51229090680967,
+      "single_two_sided": 147.01457829357497,
+      "single_loss_rate": 0.13473510456440177,
+      "ratio_two_sided": 0.5425579256691332,
+      "ratio_loss_rate": 1.1122220867397428,
+      "ratio_losses": 0.7015213161871432,
+      "ratio_gains": 0.40760529949845,
+      "designated_phi_ge_0p10": 145,
+      "share_designated_phi_ge_0p10": 0.4588607594936709,
+      "phi_ge_0p10_all": 263,
+      "expected_changes_share_of_list": 0.25241748304457096,
+      "pop_in_fragile_designated": 5148917.0,
+      "mean_phi_designated": 0.14985535915571638,
+      "method": "Gauss-Hermite quadrature, 120 nodes"
+    },
+    "DF2.0_rho0": {
+      "label": "DF=2.0, rho=0 (closed form)",
+      "designated": 316,
+      "expected_losses": 53.836508571766885,
+      "expected_gains": 27.77771777578752,
+      "expected_two_sided": 81.6142263475544,
+      "loss_rate_designated": 0.17036869801192053,
+      "single_designated": 501,
+      "single_expected_losses": 67.50228738676529,
+      "single_expected_gains": 79.51229090680967,
+      "single_two_sided": 147.01457829357497,
+      "single_loss_rate": 0.13473510456440177,
+      "ratio_two_sided": 0.5551437639373293,
+      "ratio_loss_rate": 1.2644714869426352,
+      "ratio_losses": 0.7975508779917618,
+      "ratio_gains": 0.3493512444301684,
+      "designated_phi_ge_0p10": 152,
+      "share_designated_phi_ge_0p10": 0.4810126582278481,
+      "phi_ge_0p10_all": 254,
+      "expected_changes_share_of_list": 0.2582728681884633,
+      "pop_in_fragile_designated": 5330683.0,
+      "mean_phi_designated": 0.17036869801192053,
+      "average_rule": {
+        "designated": 601,
+        "expected_losses": 36.80090710704343,
+        "expected_gains": 38.985563713522566,
+        "expected_two_sided": 75.786470820566,
+        "loss_rate": 0.061232790527526504,
+        "overlap_with_conjunction": 316
+      }
+    },
+    "old_two_period_model_census_gates_fixed": {
+      "label": "2 ACS periods, census gates fixed",
+      "designated": 316,
+      "expected_losses": 41.88231174406613,
+      "expected_gains": 19.02795587566986,
+      "expected_two_sided": 60.91026761973599,
+      "loss_rate_designated": 0.13253896121539915,
+      "single_designated": 339,
+      "single_expected_losses": 32.1018895826459,
+      "single_expected_gains": 19.994873211682517,
+      "single_two_sided": 52.09676279432842,
+      "single_loss_rate": 0.09469583947683158,
+      "ratio_two_sided": 1.1691756714366726,
+      "ratio_loss_rate": 1.399628135170884,
+      "ratio_losses": 1.304668114200588,
+      "ratio_gains": 0.9516417370704952,
+      "designated_phi_ge_0p10": 129,
+      "share_designated_phi_ge_0p10": 0.40822784810126583,
+      "phi_ge_0p10_all": 194,
+      "expected_changes_share_of_list": 0.19275401145486074,
+      "pop_in_fragile_designated": 4716529.0,
+      "mean_phi_designated": 0.13253896121539915,
+      "n_counties": 455
+    }
+  },
+  "saipe_k4": {
+    "n_counties": 3114,
+    "designated_point": 297,
+    "rho0.0": {
+      "label": "SAIPE K=4, rho=0.0",
+      "designated": 297,
+      "expected_losses": 93.3323546483484,
+      "expected_gains": 35.219081186802555,
+      "expected_two_sided": 128.55143583515095,
+      "loss_rate_designated": 0.3142503523513414,
+      "single_designated": 491,
+      "single_expected_losses": 86.7962710335973,
+      "single_expected_gains": 93.74053036601988,
+      "single_two_sided": 180.53680139961716,
+      "single_loss_rate": 0.17677448275681729,
+      "ratio_two_sided": 0.7120511432491988,
+      "ratio_loss_rate": 1.7776906907070127,
+      "ratio_losses": 1.0753037375559729,
+      "ratio_gains": 0.37570814939158015,
+      "designated_phi_ge_0p10": 215,
+      "share_designated_phi_ge_0p10": 0.7239057239057239,
+      "phi_ge_0p10_all": 341,
+      "expected_changes_share_of_list": 0.43283311729007057,
+      "pop_in_fragile_designated": 215.0,
+      "mean_phi_designated": 0.3142503523513414,
+      "method": "exact (product of normal tail probabilities)"
+    },
+    "rho0.3": {
+      "label": "SAIPE K=4, rho=0.3",
+      "designated": 297,
+      "expected_losses": 85.97384003192997,
+      "expected_gains": 49.947640781112554,
+      "expected_two_sided": 135.92148081304254,
+      "loss_rate_designated": 0.28947420886171704,
+      "single_designated": 491,
+      "single_expected_losses": 86.7962710335973,
+      "single_expected_gains": 93.74053036601988,
+      "single_two_sided": 180.53680139961716,
+      "single_loss_rate": 0.17677448275681729,
+      "ratio_two_sided": 0.7528740941420643,
+      "ratio_loss_rate": 1.6375339039172128,
+      "ratio_losses": 0.9905245813918783,
+      "ratio_gains": 0.5328286557168673,
+      "designated_phi_ge_0p10": 213,
+      "share_designated_phi_ge_0p10": 0.7171717171717171,
+      "phi_ge_0p10_all": 395,
+      "expected_changes_share_of_list": 0.4576480835455978,
+      "pop_in_fragile_designated": 213.0,
+      "mean_phi_designated": 0.28947420886171704,
+      "method": "Gauss-Hermite quadrature, 120 nodes"
+    },
+    "rho0.6": {
+      "label": "SAIPE K=4, rho=0.6",
+      "designated": 297,
+      "expected_losses": 78.20903942427356,
+      "expected_gains": 65.75187219289762,
+      "expected_two_sided": 143.96091161717118,
+      "loss_rate_designated": 0.26333009907162813,
+      "single_designated": 491,
+      "single_expected_losses": 86.7962710335973,
+      "single_expected_gains": 93.74053036601988,
+      "single_two_sided": 180.53680139961716,
+      "single_loss_rate": 0.17677448275681729,
+      "ratio_two_sided": 0.7974047978091433,
+      "ratio_loss_rate": 1.4896386342924985,
+      "ratio_losses": 0.9010645099488229,
+      "ratio_gains": 0.7014241538442596,
+      "designated_phi_ge_0p10": 212,
+      "share_designated_phi_ge_0p10": 0.7138047138047138,
+      "phi_ge_0p10_all": 436,
+      "expected_changes_share_of_list": 0.48471687413188946,
+      "pop_in_fragile_designated": 212.0,
+      "mean_phi_designated": 0.26333009907162813,
+      "method": "Gauss-Hermite quadrature, 120 nodes"
+    },
+    "rho0.9": {
+      "label": "SAIPE K=4, rho=0.9",
+      "designated": 297,
+      "expected_losses": 69.64101674818303,
+      "expected_gains": 82.66959763959868,
+      "expected_two_sided": 152.3106143877817,
+      "loss_rate_designated": 0.23448153787267015,
+      "single_designated": 491,
+      "single_expected_losses": 86.7962710335973,
+      "single_expected_gains": 93.74053036601988,
+      "single_two_sided": 180.53680139961716,
+      "single_loss_rate": 0.17677448275681729,
+      "ratio_two_sided": 0.8436541093394196,
+      "ratio_loss_rate": 1.326444485741975,
+      "ratio_losses": 0.8023503304793617,
+      "ratio_gains": 0.8818981215148499,
+      "designated_phi_ge_0p10": 206,
+      "share_designated_phi_ge_0p10": 0.6936026936026936,
+      "phi_ge_0p10_all": 482,
+      "expected_changes_share_of_list": 0.5128303514740125,
+      "pop_in_fragile_designated": 206.0,
+      "mean_phi_designated": 0.23448153787267015,
+      "method": "Gauss-Hermite quadrature, 120 nodes"
+    }
+  },
+  "empirical_bayes": {
+    "model": "multivariate Fay-Herriot on arcsin(sqrt(rate)), Census-division mean vectors, 4x4 between-county covariance by moments (eigenvalues clipped at 1e-8), DF=1.5, independent errors",
+    "psi_sd": [
+      0.08759605369159693,
+      0.07789325894275909,
+      0.07339137445469707,
+      0.0727386264448029
+    ],
+    "psi_corr": [
+      [
+        1.0,
+        0.9489301492625588,
+        0.8588207572624458,
+        0.8226737230437672
+      ],
+      [
+        0.9489301492625588,
+        0.9999999999999999,
+        0.9129019321835726,
+        0.8761648877951848
+      ],
+      [
+        0.8588207572624458,
+        0.9129019321835726,
+        1.0000000000000002,
+        0.9023905329136209
+      ],
+      [
+        0.8226737230437672,
+        0.8761648877951848,
+        0.9023905329136209,
+        1.0
+      ]
+    ],
+    "mean_sampling_sd_y": [
+      0.013160647914010837,
+      0.012750759549349747,
+      0.021474811350828186,
+      0.022201006531565644
+    ],
+    "mc_draws": 20000,
+    "flat_closed_form": {
+      "mean_phi_designated": 0.15743943762500848,
+      "designated_phi_ge_0p10": 145,
+      "expected_losses": 49.75086228950268,
+      "expected_gains": 26.35984156554038
+    },
+    "flat_arcsine_mc": {
+      "mean_phi_designated": 0.15246977848101265,
+      "designated_phi_ge_0p10": 142,
+      "expected_losses": 48.18045,
+      "expected_gains": 26.951749999999997
+    },
+    "eb": {
+      "mean_phi_designated": 0.07879699367088608,
+      "designated_phi_ge_0p10": 81,
+      "expected_losses": 24.89985,
+      "expected_gains": 56.21554999999999,
+      "phi_ge_0p10_all": 223
+    },
+    "fragile_overlap_designated": {
+      "flat": 142,
+      "eb": 81,
+      "both": 81
+    },
+    "eb_minus_flat_designated_mean": -0.07367278481012658,
+    "eb_minus_flat_undesignated_mean": 0.010477551020408161,
+    "rules_under_both_priors": {
+      "conjunction": {
+        "flat_arcsine": {
+          "designated": 316,
+          "expected_false_designations": 48.18045,
+          "expected_missed_designations": 26.951749999999997,
+          "expected_two_sided": 75.1322,
+          "false_designation_rate": 0.15246977848101265
+        },
+        "eb": {
+          "designated": 316,
+          "expected_false_designations": 24.89985,
+          "expected_missed_designations": 56.21554999999999,
+          "expected_two_sided": 81.1154,
+          "false_designation_rate": 0.07879699367088608
+        }
+      },
+      "single_2017_21": {
+        "flat_arcsine": {
+          "designated": 501,
+          "expected_false_designations": 65.50755,
+          "expected_missed_designations": 82.99085,
+          "expected_two_sided": 148.4984,
+          "false_designation_rate": 0.13075359281437124
+        },
+        "eb": {
+          "designated": 501,
+          "expected_false_designations": 93.36695,
+          "expected_missed_designations": 59.2535,
+          "expected_two_sided": 152.62045,
+          "false_designation_rate": 0.18636117764471058
+        }
+      },
+      "four_period_mean": {
+        "flat_arcsine": {
+          "designated": 601,
+          "expected_false_designations": 32.473299999999995,
+          "expected_missed_designations": 36.9383,
+          "expected_two_sided": 69.41159999999999,
+          "false_designation_rate": 0.054032113144758726
+        },
+        "eb": {
+          "designated": 601,
+          "expected_false_designations": 41.16385,
+          "expected_missed_designations": 28.98725,
+          "expected_two_sided": 70.1511,
+          "false_designation_rate": 0.0684922628951747
+        }
+      }
+    }
+  },
+  "known_truth": {
+    "T1_truth_from_EB_posterior": {
+      "replicates": 40,
+      "eb_inner_draws": 4000,
+      "mean_sum_flat": 79.30333267229555,
+      "mean_sum_eb": 87.58303125,
+      "mean_true_misclassified": 85.95,
+      "sd_true_misclassified": 6.5903970543005475,
+      "mean_band_errors_flat": 126.775,
+      "mean_band_errors_eb": 130.9,
+      "mean_units_truly_at_risk": 247.675,
+      "mean_true_losses": 25.825,
+      "mean_true_gains": 60.125,
+      "mean_flat_losses": 50.92892522903058,
+      "mean_flat_gains": 28.374407443264964,
+      "mean_eb_losses": 26.39385625,
+      "mean_eb_gains": 61.189175,
+      "flat_band_precision": 0.7564156945917285,
+      "flat_band_recall": 0.7199959624507923,
+      "eb_band_precision": 0.7590107574581346,
+      "eb_band_recall": 0.6908246694256587,
+      "mean_two_survey_disagreement": 108.93825564343679,
+      "flat": {
+        "label": "flat prior (closed form)",
+        "sum_prob": 3172.133306891822,
+        "sum_true": 3438.0,
+        "brier": 0.020435787599614272,
+        "calibration": [
+          {
+            "bin": "[0,0.02)",
+            "n": 109620,
+            "mean_prob": 0.00042490159819023876,
+            "observed_rate": 0.00120415982484948
+          },
+          {
+            "bin": "[0.02,0.05)",
+            "n": 2769,
+            "mean_prob": 0.03327132739152703,
+            "observed_rate": 0.06644998194293969
+          },
+          {
+            "bin": "[0.05,0.1)",
+            "n": 2541,
+            "mean_prob": 0.07282776953704015,
+            "observed_rate": 0.10861865407319952
+          },
+          {
+            "bin": "[0.1,0.25)",
+            "n": 4290,
+            "mean_prob": 0.16850700246454003,
+            "observed_rate": 0.22867132867132867
+          },
+          {
+            "bin": "[0.25,0.5)",
+            "n": 4052,
+            "mean_prob": 0.3617960018324544,
+            "observed_rate": 0.3501974333662389
+          },
+          {
+            "bin": "[0.5,1)",
+            "n": 1088,
+            "mean_prob": 0.6061392332348057,
+            "observed_rate": 0.4099264705882353
+          }
+        ]
+      },
+      "eb": {
+        "label": "empirical Bayes (MFH)",
+        "sum_prob": 3503.32125,
+        "sum_true": 3438.0,
+        "brier": 0.015475529475414121,
+        "calibration": [
+          {
+            "bin": "[0,0.02)",
+            "n": 110247,
+            "mean_prob": 0.0004156621041842405,
+            "observed_rate": 0.00042631545529583573
+          },
+          {
+            "bin": "[0.02,0.05)",
+            "n": 2698,
+            "mean_prob": 0.03325324314306894,
+            "observed_rate": 0.02742772424017791
+          },
+          {
+            "bin": "[0.05,0.1)",
+            "n": 2400,
+            "mean_prob": 0.07209104166666667,
+            "observed_rate": 0.06666666666666667
+          },
+          {
+            "bin": "[0.1,0.25)",
+            "n": 3690,
+            "mean_prob": 0.1662857723577236,
+            "observed_rate": 0.17533875338753388
+          },
+          {
+            "bin": "[0.25,0.5)",
+            "n": 3265,
+            "mean_prob": 0.3624535222052067,
+            "observed_rate": 0.33996937212863704
+          },
+          {
+            "bin": "[0.5,1)",
+            "n": 2060,
+            "mean_prob": 0.6785217233009708,
+            "observed_rate": 0.6796116504854369
+          }
+        ]
+      }
+    },
+    "T2_truth_equals_published": {
+      "replicates": 40,
+      "eb_inner_draws": 4000,
+      "mean_sum_flat": 75.17545256662166,
+      "mean_sum_eb": 93.12559375000001,
+      "mean_true_misclassified": 74.575,
+      "sd_true_misclassified": 7.482929290674259,
+      "mean_band_errors_flat": 122.525,
+      "mean_band_errors_eb": 149.175,
+      "mean_units_truly_at_risk": 236.0,
+      "mean_true_losses": 26.275,
+      "mean_true_gains": 48.3,
+      "mean_flat_losses": 46.895945796121985,
+      "mean_flat_gains": 28.279506770499665,
+      "mean_eb_losses": 21.894399999999997,
+      "mean_eb_gains": 71.23119375,
+      "flat_band_precision": 0.7484400656814449,
+      "flat_band_recall": 0.7242584745762712,
+      "eb_band_precision": 0.691392042323377,
+      "eb_band_recall": 0.6645127118644067,
+      "mean_two_survey_disagreement": 103.19979291027434,
+      "flat": {
+        "label": "flat prior (closed form)",
+        "sum_prob": 3007.018102664866,
+        "sum_true": 2983.0,
+        "brier": 0.017133927924366885,
+        "calibration": [
+          {
+            "bin": "[0,0.02)",
+            "n": 110379,
+            "mean_prob": 0.00039110633438773864,
+            "observed_rate": 0.0005979398255102873
+          },
+          {
+            "bin": "[0.02,0.05)",
+            "n": 2600,
+            "mean_prob": 0.033384248136447914,
+            "observed_rate": 0.04038461538461539
+          },
+          {
+            "bin": "[0.05,0.1)",
+            "n": 2246,
+            "mean_prob": 0.0727602657092916,
+            "observed_rate": 0.09528049866429207
+          },
+          {
+            "bin": "[0.1,0.25)",
+            "n": 4202,
+            "mean_prob": 0.16844397858270566,
+            "observed_rate": 0.1894336030461685
+          },
+          {
+            "bin": "[0.25,0.5)",
+            "n": 4025,
+            "mean_prob": 0.36319666168318393,
+            "observed_rate": 0.33937888198757765
+          },
+          {
+            "bin": "[0.5,1)",
+            "n": 908,
+            "mean_prob": 0.5990764464364577,
+            "observed_rate": 0.4801762114537445
+          }
+        ]
+      },
+      "eb": {
+        "label": "empirical Bayes (MFH)",
+        "sum_prob": 3725.02375,
+        "sum_true": 2983.0,
+        "brier": 0.015718303819053554,
+        "calibration": [
+          {
+            "bin": "[0,0.02)",
+            "n": 110517,
+            "mean_prob": 0.0004066048662196763,
+            "observed_rate": 0.0003709836495742736
+          },
+          {
+            "bin": "[0.02,0.05)",
+            "n": 2514,
+            "mean_prob": 0.03338673428798727,
+            "observed_rate": 0.0330151153540175
+          },
+          {
+            "bin": "[0.05,0.1)",
+            "n": 2258,
+            "mean_prob": 0.07177723649247121,
+            "observed_rate": 0.06111603188662533
+          },
+          {
+            "bin": "[0.1,0.25)",
+            "n": 3560,
+            "mean_prob": 0.16698616573033706,
+            "observed_rate": 0.13595505617977527
+          },
+          {
+            "bin": "[0.25,0.5)",
+            "n": 3058,
+            "mean_prob": 0.3617717462393721,
+            "observed_rate": 0.29398299542184436
+          },
+          {
+            "bin": "[0.5,1)",
+            "n": 2453,
+            "mean_prob": 0.7066086424785977,
+            "observed_rate": 0.5454545454545454
+          }
+        ]
+      }
+    }
+  },
+  "seconds": 58.8
+}
