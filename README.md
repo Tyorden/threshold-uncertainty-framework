@@ -91,7 +91,7 @@ with `PAPER_PREP` set, the number audit and the figure values reproduce byte for
 
 The figures and the number audit run from the results files alone
 (`paper/figures/make_figures.py`; `paper/number_audit_narrow.py` also needs the manuscript's two
-`.tex` files, which are not in this repository while the paper is under review).
+`.tex` files, which are not in this repository until the paper is submitted).
 
 ## Checks
 
